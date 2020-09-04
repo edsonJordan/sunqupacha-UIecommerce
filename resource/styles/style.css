@@ -23,6 +23,7 @@ a,h1,span,p{
 .img{    
     box-sizing: border-box;
     /* object-fit: cover;    */ 
+    width: auto;
     height: 100%;    
 }
 .container__feactured{
@@ -266,16 +267,23 @@ a,h1,span,p{
     display: flex;    
     position: absolute;
     height: 100%;
+    
 }
 .content--foot{
     display: flex;
     flex-direction: column;
-    row-gap: .7rem;
+    row-gap: .9rem;
     text-align: center;
-    position: absolute;      
+    position: absolute;          
     bottom: 0;
+    margin: 3rem;
 }
-
+.items--points{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem ;
+}
 .item--primary-card{
     object-fit: cover;
     height: 100%;
