@@ -1,8 +1,8 @@
 :root{
     /* Relative icon size */
-    --height-icon-menu: .060rem;
+    --height-icon-menu: .080rem;
     --width-icon-menu:.8rem;
-    --height-spacing--icon-menu:.25rem;        
+    --height-spacing--icon-menu:.30rem;        
     /* Light gray */
     --color-gray-light :#F2F1F2;
 }
