@@ -22,7 +22,7 @@ a,h1,span,p{
 }
 .img{    
     box-sizing: border-box;
-    /* object-fit: cover;    */ 
+    object-fit: contain;    
     width: auto;
     height: 100%;    
 }
