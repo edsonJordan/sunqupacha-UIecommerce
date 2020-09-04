@@ -1,0 +1,226 @@
+:root{
+    /* Relative icon size */
+    --height-icon-menu: .060rem;
+    --width-icon-menu:.8rem;
+    --height-spacing--icon-menu:.25rem;        
+    /* Light gray */
+    --color-gray-light :#F2F1F2;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    height: 100%;
+    object-fit: cover;    
+}
+.container__feactured{
+    width: calc(100vw - (100vw - 100%));
+}
+.section__menu{
+    background-color: red;
+    height: 3rem;
+    position: fixed;    
+    width: 100%;    
+}
+.content--menu{
+    display: flex;
+    height: 1rem;    
+    margin: 1rem;
+    position: relative;
+    width: 100%;
+}
+/* Animate css */
+/* Start Menu-mobil */
+@keyframes mobil-start{
+    0%{                     
+        background: radial-gradient(circle, transparent 45%, var(--color-gray-light) 55%);      
+    }
+    50%{                
+        background: radial-gradient(circle, transparent 35%, var(--color-gray-light) 65%);      
+    }
+    70%{                
+        background: radial-gradient(circle, transparent 45%, var(--color-gray-light) 75%);      
+    }
+    90%{                
+        background: radial-gradient(circle, transparent 5%, var(--color-gray-light) 95%);      
+    }
+    100%{                
+        background-color: transparent;
+    }
+}
+@keyframes mobil-before-start{
+    0%{
+        top: calc(var(--height-spacing--icon-menu) * -1);    
+    }
+    30%{
+        top: calc(var(--height-spacing--icon-menu) * -.8);    
+        transform: rotate(5deg) ;
+    }
+    50%{
+        top: calc(var(--height-spacing--icon-menu) * -.5);    
+        transform: rotate(15deg) ;
+    }
+    60%{
+        top: calc(var(--height-spacing--icon-menu) * -.4);    
+        transform: rotate(25deg) ;
+    }
+    70%{
+        top: calc(var(--height-spacing--icon-menu) * -.3);    
+        transform: rotate(35deg) ;
+    }
+    100%{                
+        top: calc(var(--height-spacing--icon-menu) * -.04);    
+        transform: rotate(45deg) ;
+    }
+}
+@keyframes mobil-after-start{
+    0%{
+        top: calc(var(--height-spacing--icon-menu) * 1);    
+    }
+    30%{        
+        top: calc(var(--height-spacing--icon-menu) * .8);    
+        transform: rotate(-5deg) ;
+    }
+    50%{
+        top: calc(var(--height-spacing--icon-menu) * .5);    
+        transform: rotate(-15deg) ;
+    }
+    60%{
+        top: calc(var(--height-spacing--icon-menu) * .4);    
+        transform: rotate(-25deg) ;
+    }
+    70%{
+        top: calc(var(--height-spacing--icon-menu) * .3);    
+        transform: rotate(-35deg) ;
+    }
+    100%{        
+        top: calc(var(--height-spacing--icon-menu) * -.2);    
+        transform: rotate(-45deg) ;
+    }
+}
+/* End Menu-mobil */
+@keyframes mobil-before-end{
+    0%{
+        top: calc(var(--height-spacing--icon-menu) * -1);    
+    }
+    30%{
+        top: calc(var(--height-spacing--icon-menu) * -.8);    
+        transform: rotate(5deg) ;
+    }
+    50%{
+        top: calc(var(--height-spacing--icon-menu) * -.5);    
+        transform: rotate(15deg) ;
+    }
+    60%{
+        top: calc(var(--height-spacing--icon-menu) * -.4);    
+        transform: rotate(25deg) ;
+    }
+    70%{
+        top: calc(var(--height-spacing--icon-menu) * -.3);    
+        transform: rotate(35deg) ;
+    }
+    100%{        
+        top: calc(var(--height-spacing--icon-menu) * -.04);    
+        transform: rotate(45deg) ;
+    }
+}
+@keyframes mobil-after-end{
+    0%{
+        top: calc(var(--height-spacing--icon-menu) * 1);    
+    }
+    30%{        
+        top: calc(var(--height-spacing--icon-menu) * .8);    
+        transform: rotate(-5deg) ;
+    }
+    50%{
+        top: calc(var(--height-spacing--icon-menu) * .5);    
+        transform: rotate(-15deg) ;
+    }
+    60%{
+        top: calc(var(--height-spacing--icon-menu) * .4);    
+        transform: rotate(-25deg) ;
+    }
+    70%{
+        top: calc(var(--height-spacing--icon-menu) * .3);    
+        transform: rotate(-35deg) ;
+    }
+    100%{        
+        top: calc(var(--height-spacing--icon-menu) * -.2);    
+        transform: rotate(-45deg) ;
+    }
+}
+@keyframes mobil-end{
+    0%{                     
+        background: radial-gradient(circle, transparent 45%, var(--color-gray-light) 55%);      
+    }
+    50%{        
+        
+        background: radial-gradient(circle, transparent 35%, var(--color-gray-light) 65%);      
+    }
+    70%{                
+        background: radial-gradient(circle, transparent 45%, var(--color-gray-light) 75%);      
+    }
+    90%{        
+        background: radial-gradient(circle, transparent 5%, var(--color-gray-light) 95%);               
+    }
+    100%{                
+        background-color: transparent;
+    }
+}
+/* Menu icon */
+.input--check{
+    display: none;
+}
+.none{
+    display: none;
+}
+/* Start Menu-mobil checked */
+.input--check:checked + .menu--mobil::before{        
+    animation: mobil-before-start .3s forwards;        
+}
+.input--check:checked + .menu--mobil::after{
+    animation: mobil-after-start .3s forwards;              
+}
+.input--check:checked + .menu--mobil{    
+    /*background-color: blue;*/
+    transform: scale(1.1);          
+    animation: mobil-start .4s forwards;        
+}
+/* End Menu-mobil checked */
+.input--check:not(:checked) + .menu--mobil::before{      
+    animation: mobil-before-end .3s reverse; 
+}
+.input--check:not(:checked) + .menu--mobil::after{      
+    animation: mobil-after-end .3s reverse; 
+}
+.input--check:not(:checked) + .menu--mobil{    
+    /*background-color: blue;*/
+    transform: scale(1.1);          
+    animation: mobil-end .4s reverse;        
+}
+/* End Menu-mobil */
+.menu--mobil{
+    background: var(--color-gray-light);
+    height: var(--height-icon-menu);
+    margin: auto 0;    
+    width: var(--width-icon-menu);    
+}
+.menu--mobil::before{        
+    background-color:var(--color-gray-light);
+    content: "";
+    display: flex;
+    height: var(--height-icon-menu);
+    position: relative;        
+    top: calc(var(--height-spacing--icon-menu) * -1);    
+    width: var(--width-icon-menu);    
+}
+.menu--mobil::after{
+    background-color:var(--color-gray-light);
+    content: "";
+    display: block;
+    height: var(--height-icon-menu);
+    position: relative;        
+    top: calc(var(--height-spacing--icon-menu) - var(--height-icon-menu));
+    width: var(--width-icon-menu);        
+}
