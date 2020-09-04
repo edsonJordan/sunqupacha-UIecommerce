@@ -9,17 +9,20 @@
 }
 @font-face{
     font-family: 'valera';
-    src: url(../fonts/VarelaRound-Regular.ttf);
+    /* src: url(../fonts/VarelaRound-Regular.ttf); */
 }
 body{
     margin: 0;
     padding: 0;
-
     font-family:'valera' ,Verdana, Geneva, Tahoma, sans-serif;
+}
+a,h1,span,p{
+    margin: 0;
+    padding: 0;    
 }
 .img{    
     box-sizing: border-box;
-    object-fit: cover;    
+    /* object-fit: cover;    */ 
     height: 100%;    
 }
 .container__feactured{
@@ -293,8 +296,7 @@ body{
     color: rgba(242, 242, 242, .5);
 }
 .a{
-    text-decoration: none;
-    
+    text-decoration: none;    
     color: var(--color-gray-light);
 }
 .button{
