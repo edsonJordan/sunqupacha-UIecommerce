@@ -10,6 +10,7 @@
 @font-face{
     font-family: 'valera';
     src: url(../fonts/VarelaRound-Regular.ttf);
+    font-display: block;
 }
 body{
     margin: 0;
@@ -292,8 +293,7 @@ a,h1,span,p{
     height: 100%;
     width: 100%;
 }
-.item--primary-card{
-    object-fit: contain;
+.item--primary-card{    
     width: 100%;
 }
 .h1.foot{
