@@ -17,7 +17,7 @@ body{
     padding: 0;
     font-family:'valera' ,Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
-    min-height: 100vh;
+    height: 100vh;
 }
 a,h1,span,p{
     margin: 0;
@@ -30,7 +30,7 @@ a,h1,span,p{
 }
 .container__feactured{    
     width: calc(100vw - (100vw - 100%));    
-    min-height: 100vh;      
+    height: 100vh;
 }
 .section__menu{
     background-color: transparent;
@@ -264,8 +264,7 @@ a,h1,span,p{
     transform: rotate(45deg);
 }
 .section__content{
-    display: flex;    
-    min-height: 100vh;      
+    display: flex;          
 }
 .content--body{
     display: flex;    
@@ -288,11 +287,13 @@ a,h1,span,p{
     margin-right: 3rem;
     margin-bottom: 3rem ;
 }
-
-.item--primary-card{    
-    max-width: fit-content;
-    min-width: 320px;
-    min-height: 400px;
+.item--primary-card{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.item--primary-card{
+    width: 100%;
 }
 .h1.foot{
     color: var(--color-gray-light);
