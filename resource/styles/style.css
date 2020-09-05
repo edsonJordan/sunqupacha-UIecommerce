@@ -291,12 +291,7 @@ a,h1,span,p{
 .item--primary-card{
     object-fit: cover;
     height: 100%;
-    width: 100%;
-}
-.item--primary-card{
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
+    max-width: 100vw;
 }
 .h1.foot{
     color: var(--color-gray-light);
