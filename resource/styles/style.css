@@ -17,7 +17,7 @@ body{
     padding: 0;
     font-family:'valera' ,Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
-    height: 100vh;
+    height: auto;
 }
 a,h1,span,p{
     margin: 0;
