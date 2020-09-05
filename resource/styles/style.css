@@ -249,8 +249,8 @@ a,h1,span,p{
 /* Icon search */
 .icon--search{    
     height: 1.1rem;    
-    width: 1.05rem;
-    border: .025rem solid var(--color-gray-light);
+    width: 1.05rem;    
+    border: .125rem solid var(--color-gray-light);
     border-radius: 50%;
 }
 .icon--search::after{
@@ -319,4 +319,25 @@ a,h1,span,p{
     border-radius: 30px;
     margin: auto;
     background-color: var(--color-blue-primary);
+}
+.foot--slider{
+    display: flex;
+    width: 100%;
+    gap: .6rem;
+    justify-content: center;
+    position: absolute;
+    bottom: .8rem;
+}    
+.radio--item:checked{
+    transform: scale(1.5);
+}
+.radio--item{   
+    box-sizing: border-box; 
+    background-color: rgba(242, 242, 242, .2);
+    border-radius: 50%;    
+    width: .6rem;
+    height: .65rem;    
+}
+.radio--slider:checked + .radio--item{
+    transform: scale(1.5);
 }
