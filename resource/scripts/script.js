@@ -18,6 +18,5 @@ document.getElementById("foot--slider").addEventListener('change', (e)=>{
             }else{
                 data.classList.remove('active');
             }                                    
-        }
-        
+        }        
 })

@@ -207,6 +207,10 @@ a,h1,span,p{
     animation: mobil-end .4s reverse;        
 }
 /* End Menu-mobil */
+/* Start Search icon */
+.search--check:checked ~ .input-search{
+    display: block;
+}
 .menu--mobil{
     background: var(--color-gray-light);
     height: var(--height-icon-menu);
@@ -263,6 +267,18 @@ a,h1,span,p{
     width: .45rem;
     background-color: var(--color-gray-light);
     transform: rotate(45deg);
+}
+.input-search{
+    position: absolute;
+    outline: none;
+    color: var(--color-gray-light);
+    font-weight: 600;
+    letter-spacing: .1rem;
+    right: 10%;
+    border: none;
+    height: 1.3rem;
+    width: 70%;
+    background-color: rgba(242, 242, 242, .2);
 }
 .section__content{
     display: flex;          
