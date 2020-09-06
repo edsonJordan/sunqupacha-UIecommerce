@@ -20,3 +20,7 @@ document.getElementById("foot--slider").addEventListener('change', (e)=>{
             }                                    
         }        
 })
+document.getElementById("menu--check").addEventListener('change', (e)=>{
+        document.getElementById("nav").classList.toggle("none");
+    
+});

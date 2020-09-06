@@ -20,10 +20,14 @@ body{
     height: auto;
     /* height: 100vh; */
 }
-a,h1,span,p{
+.ul{
+    list-style: none;
+}
+a,h1,span,p,li,ul{
     margin: 0;
     padding: 0;    
 }
+
 .img{    
     box-sizing: border-box;
     object-fit: cover;        
@@ -39,6 +43,27 @@ a,h1,span,p{
     height: 3rem;
     position: fixed;    
     width: 100%;    
+}
+.nav{    
+    display: flex;
+    flex-direction: column;    
+    
+    left: 0;    
+    background-color: rgba(0, 0, 0, .24);
+}
+.ul--nav{
+    display: flex;
+    flex-direction: column;
+    list-style: none;            
+}
+.li-nav{
+    width: auto;    
+    margin:1rem auto;
+    
+}
+.a-nav{
+  text-decoration: none;
+  color: var(--color-gray-light);
 }
 /* Animate css */
 /* Start Menu-mobil */
