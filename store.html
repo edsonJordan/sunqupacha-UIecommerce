@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Store UI Ecommerce</title>
     <link rel="stylesheet" href="resource/styles/style.css">
+    <link rel="stylesheet" href="resource/styles/store.css">
 </head>
 <body>
     <div class="container__feactured">           
         <div class="section__menu">            
             <div class="content--menu">
-                <input   class="input--check none" type="checkbox" name="" id="menu--check">                                            
+                <input  class="input--check none" type="checkbox" name="" id="menu--check">                                            
                 <!-- Start Menu Icon -->                
                 <label class="menu--mobil" for="menu--check"></label>                    
                 <div class="menu--logo">
                     <img src="resource/icons/logo-marca.svg" alt="" class="img icon--logo">
-                </div>
+                </div>               
                 <!-- End Menu Icon -->                                        
                 <div class="menu--icons">                       
                     <img class="img icon--menu" src="resource/icons/buy-icon.svg" alt="">
@@ -24,9 +25,44 @@
                     <label for="search-check" class="icon--search"></label>
                     <input type="text" id="input-search"  class="input-search none">
                 </div>
+            </div>                        
+            <div class="nav none" id="nav">
+                <ul class="ul--nav">
+                    <li class="li li-nav"><a class="a-nav" href="#">Inicion</a> </li>
+                    <li class="li li-nav"><a class="a-nav" href="#">Tienda</a></li>
+                    <li class="li li-nav"><a class="a-nav" href="#">Encuentranos</a></li>
+                </ul>
             </div>
-        </div>                                                      
-                   
+            <!-- Section Nav Store  -->
+            <div class="section nav-store">
+                <div class="content nav--store">
+                    <h1 class="h1 h1--store">
+                        Keds & Trainers
+                    </h1>
+                    <span class="span span--store">
+                        345 products
+                    </span>
+                </div>
+            </div>
+            <!-- End nav store -->
+            <div class="section type-order" id="filter-order" >
+                <div class="content type--order">                        
+                        <input type="radio" name="filter" class="radio-filter none" id="filter-one">
+                        <label for="filter-one" class="order label--filter-1" ></label>                                                
+
+                        <input type="radio" name="filter" class="radio-filter none" id="filter-two">
+                        <label for="filter-two" class="order label--filter-2" ></label>                    
+
+                        <input type="radio" name="filter" class="radio-filter none" id="filter-three">
+                        <label for="filter-three" class="order label--filter-3" ></label>
+                        
+                        <input type="radio" name="filter" class="radio-filter none" id="filter-four">
+                        <label for="filter-four" class="order label--filter-4" ></label>
+                </div>
+            </div>
+        </div>                                                       
+                                 
     </div>
+<script src="resource/scripts/script.js"></script>
 </body>
 </html>

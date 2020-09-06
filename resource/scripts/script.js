@@ -1,4 +1,3 @@
-const img = []
 const  getImg = async ()=>  {
     /* http://market.designmodo.com/aware-mobile-kit/ */
     const url = "./img/items-primary";
@@ -9,7 +8,8 @@ const  getImg = async ()=>  {
         console.log(res);        
     })
 }
-document.getElementById("foot--slider").addEventListener('change', (e)=>{
+/* Index */
+document.getElementById("foot--slider")?.addEventListener('change', (e)=>{
         const items = document.getElementById("items--card").children;               
         for(const data of items) {
             let extrac = data.className.split(" ");
@@ -20,7 +20,14 @@ document.getElementById("foot--slider").addEventListener('change', (e)=>{
             }                                    
         }        
 })
-document.getElementById("menu--check").addEventListener('change', (e)=>{
+document.getElementById("menu--check")?.addEventListener('change', (e)=>{
         document.getElementById("nav").classList.toggle("none");
     
 });
+
+/* Store */
+document.getElementById("filter-order").addEventListener('click', (e)=>{
+    /* console.log(e.target.classList.toggle("active")); */
+    console.log(e.target);
+    
+})

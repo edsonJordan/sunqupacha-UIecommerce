@@ -1,0 +1,75 @@
+.section__menu{
+    background-color: var(--color-blue-primary);
+}
+.section{
+    width: 100%;
+    height: auto;
+}
+.nav-store{
+    background-color: var(--color-blue-primary);        
+}
+.content{
+    display: flex;
+}
+.nav--store{    
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1rem;        
+}
+.h1--store{
+    margin: revert;  
+    color: var(--color-gray-light);  
+}
+.span--store{
+    color: var(--color-gray-light);  
+    margin-bottom: 2.4rem;
+}
+.type-order{ 
+    
+}
+.type--order{    
+    display: flex;        
+}
+.order{           
+    height: 2rem;    
+    width: 100%;
+    border-bottom: .2rem solid transparent;
+    padding: .4rem 0;     
+}
+.order.active{
+    
+}
+.order:not(:first-child){
+    border-left: .15rem solid var(--color-dark-gray);
+}
+.img--type-order.active{
+    filter: initial;
+}
+.order:nth-of-type(1){
+    background-image: url(../img/store/ajustar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+}
+.order:nth-of-type(2){
+    background-image: url(../img/store/senal.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+}
+.order:nth-of-type(3){
+    background-image: url(../img/store/rectangular.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+}
+.order:nth-of-type(4){
+    background-image: url(../img/store/cuadricula.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+}
+.radio-filter:checked + .order{
+    border-bottom: .2rem solid var(--color-blue-primary);
+    
+}

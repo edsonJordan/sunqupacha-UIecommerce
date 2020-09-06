@@ -6,6 +6,8 @@
     /* Light gray */
     --color-blue-primary:#1F4BA4;
     --color-gray-light :#F2F2F2;
+    --color-back-dark:#232323;
+    --color-dark-gray:#C4C4C4;
 }
 @font-face{
     font-family: 'valera';
@@ -46,9 +48,9 @@ a,h1,span,p,li,ul{
 }
 .nav{    
     display: flex;
-    flex-direction: column;    
-    
-    left: 0;    
+    position: absolute;
+    width: 100%;
+    flex-direction: column;            
     background-color: rgba(0, 0, 0, .24);
 }
 .ul--nav{
@@ -390,3 +392,5 @@ a,h1,span,p,li,ul{
 .items-card{
     display: contents;
 }
+
+/*Pag Store */
