@@ -25,16 +25,16 @@
     margin-bottom: 2.4rem;
 }
 .type-order{ 
-    
+
 }
 .type--order{    
     display: flex;        
 }
 .order{           
-    height: 2rem;    
+    height: 1.4rem;    
     width: 100%;
     border-bottom: .2rem solid transparent;
-    padding: .4rem 0;     
+    padding: .6rem 0;     
 }
 .order.active{
     
@@ -48,28 +48,28 @@
 .order:nth-of-type(1){
     background-image: url(../img/store/ajustar.svg);
     background-repeat: no-repeat;
+    
     background-position: center;
-    background-size: 2rem;
+    background-size: 1.3rem;
 }
 .order:nth-of-type(2){
     background-image: url(../img/store/senal.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2rem;
+    background-size: 1.3rem;
 }
 .order:nth-of-type(3){
     background-image: url(../img/store/rectangular.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2rem;
+    background-size: 1.3rem;
 }
 .order:nth-of-type(4){
     background-image: url(../img/store/cuadricula.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2rem;
+    background-size: 1.3rem;
 }
 .radio-filter:checked + .order{
-    border-bottom: .2rem solid var(--color-blue-primary);
-    
+    border-bottom: .18rem solid var(--color-blue-primary);    
 }
