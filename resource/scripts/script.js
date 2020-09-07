@@ -26,8 +26,3 @@ document.getElementById("menu--check")?.addEventListener('change', (e)=>{
 });
 
 /* Store */
-document.getElementById("filter-order").addEventListener('click', (e)=>{
-    /* console.log(e.target.classList.toggle("active")); */
-    console.log(e.target);
-    
-})

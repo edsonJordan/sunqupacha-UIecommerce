@@ -19,13 +19,13 @@ body{
     padding: 0;
     font-family:'valera' ,Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
-    height: auto;
+    height: auto;    
     /* height: 100vh; */
 }
 .ul{
     list-style: none;
 }
-a,h1,span,p,li,ul{
+a,h1,h2,span,p,li,ul{
     margin: 0;
     padding: 0;    
 }
