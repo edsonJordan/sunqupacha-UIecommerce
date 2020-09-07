@@ -1,3 +1,6 @@
+body{
+    background-color: white;
+}
 .section__menu{
     background-color: var(--color-blue-primary);
 }
@@ -70,12 +73,20 @@
     display: grid;
     grid-template-columns: repeat(2,minmax( 180px, 1fr));
     grid-auto-rows: auto;     
-    grid-auto-flow   : row  dense;
+    grid-auto-flow   : row  dense;    
 }
 .product-info{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.item{
+    border: .002rem solid rgba(0, 0, 0, .2) ;
+}
+.product-title{
+    font-size: .6rem;
+    margin: .9rem 0;
+    color: var(--color-light-black);
 }
 .img--product{
     object-fit: cover;
@@ -83,8 +94,41 @@
     max-height: 200px;    
 }
 .product--info{
-    display: flex;
-    text-align: center;
+    display: flex;    
     justify-content: space-between;
     width: auto;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+.product--sale{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 4rem;
+    height: 1.5rem;
+    clip-path: polygon(0% 0%, 84% 0, 100% 50%, 84% 100%, 0% 100%);
+}
+.product--sale[title~=""]{
+    background-color: transparent;
+}
+.product--sale[title~="sale-alert"]{
+    background-color: var(--color-yellow-intense);
+    
+}
+.product--sale[title~="sale-warning"]{
+    background-color: var(--color-red-intense);    
+}
+.product--price::before{
+    content: "$";
+}
+.h1.info{
+    font-size:1.5rem;
+}
+.h2.info{
+    color: var(--color-dark-gray);
+    text-decoration: line-through;    
+    font-size:1.3rem;
 }

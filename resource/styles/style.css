@@ -8,6 +8,11 @@
     --color-gray-light :#F2F2F2;
     --color-back-dark:#232323;
     --color-dark-gray:#C4C4C4;
+    --color-light-black:#595959;
+
+
+    --color-yellow-intense:#F9CB39;
+    --color-red-intense:#ED4035;
 }
 @font-face{
     font-family: 'valera';
