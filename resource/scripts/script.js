@@ -21,8 +21,16 @@ document.getElementById("foot--slider")?.addEventListener('change', (e)=>{
         }        
 })
 document.getElementById("menu--check")?.addEventListener('change', (e)=>{
-        document.getElementById("nav").classList.toggle("none");
-    
+        document.getElementById("nav").classList.toggle("none");    
 });
+
+document.getElementById("products--items")?.addEventListener('click', (e)=>{
+    
+    if (e.target.nodeName === 'IMG') {
+        console.log("click");
+        
+    }
+    
+})
 
 /* Store */

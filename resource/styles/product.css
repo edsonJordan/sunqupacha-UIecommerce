@@ -1,0 +1,22 @@
+.section{
+    width: 100%;
+    height: auto;
+}
+.section__menu{
+    background-color: white;
+    border-bottom: .02rem solid rgba(0, 0, 0, .2);
+}
+.icon--search{
+    filter: invert();    
+}
+.icon--menu{
+    filter: invert();
+}
+.menu--mobil{
+    filter: invert();
+}
+.header-product{
+    padding-top: 3rem;
+    text-align: center;
+    row-gap: 1rem;
+}
