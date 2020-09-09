@@ -97,20 +97,20 @@
     display: block;
     content: "";
     position: relative;
-    top: 25%;
+    top: 28%;
     transform: rotate(-45deg);
     margin: auto;
-    height: .4rem;
-    width: .7rem;
-    border-bottom: .001rem solid white;
-    border-left: .001rem solid white;
+    height: .3rem;
+    width: .6rem;
+    border-bottom: .13rem solid white;
+    border-left: .13rem solid white;
 }
 .radio:checked +.radio-label[color~="white"]::after{
-    border-bottom: .01rem solid black;
-    border-left: .01rem solid black;
+    border-bottom: .15rem solid black;
+    border-left: .15rem solid black;
 }
 .hr{
-    width: 100%;    
+    width: auto;    
     border-top:.02rem solid rgba(0, 0, 0, .2);    
 }
 
@@ -119,11 +119,13 @@
     /* border: .123rem solid rgba(0, 0, 0, .3);
     border-radius:10rem; */
     margin: 1rem .9rem;
+    width: auto;
     justify-content: center;
     overflow: hidden;
 }
 .content-stars{
     display: flex;
+    
     gap: .2rem;
     align-items: center;
     border: .12rem solid rgba(0, 0, 0, .3);
@@ -132,6 +134,10 @@
     border-right: none;
     padding: .5rem .8rem;
 }
+.content-stars:not(.span-stars){
+    direction: rtl;
+}
+
 .hl{
     width: 0.1rem;
     height: auto;
@@ -153,7 +159,7 @@
     width: 1rem;
     margin: auto;
     height: .9rem;
-    background-color: var(--color-yellow-intense);
+    background-color: rgba(0, 0, 0, .3);
     /* clip-path: polygon(50% 0%, 67% 25%, 98% 35%, 76% 59%, 79% 91%, 49% 80%, 21% 91%, 26% 59%, 2% 35%, 34% 25%); */
     clip-path: polygon(51% 0, 68% 25%, 100% 38%, 81% 65%, 85% 100%, 49% 84%, 13% 100%, 19% 62%, 0 37%, 32% 28%);
 }
@@ -184,4 +190,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+.radio-start:checked ~ .label-star{
+    background-color: var(--color-yellow-intense);
 }
