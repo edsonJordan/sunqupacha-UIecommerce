@@ -198,18 +198,30 @@
     margin: 1rem .9rem;
 }
 .add-cant{
-    display: flex;
-    gap: .6rem;
+    width: auto;
+    display: flex;    
+    justify-content: space-between;    
 }
 .button-addcart{
     color: white;    
+    margin: initial;
 }
-select::-ms-expand { display: none; }
-
 .select-addcart{
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
     display: block;    
     outline: none;
-    min-width: 3.9rem;
-    text-align: center;
+    min-width: 3rem;
     border: .123rem solid rgba(0, 0, 0, .3);    
+    background-color: transparent;
+    background-image: url(../icons/arrow-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem 1.2rem;    
+    background-position: center right;
+    background-position-x: 1rem;
 }
+
