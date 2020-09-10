@@ -359,7 +359,8 @@ a,h1,h2,span,p,li,ul{
     color: var(--color-gray-light);
 }
 .button{
-    display: block;        
+    display: block;     
+    border: none;   
     width: 13rem;
     height: 2rem;
     line-height: 2rem;
