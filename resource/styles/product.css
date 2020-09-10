@@ -156,9 +156,9 @@
 
 .label-star{
     display: block;
-    width: 1rem;
+    width: 1.2rem;
     margin: auto;
-    height: .9rem;
+    height: 1.2rem;
     background-color: rgba(0, 0, 0, .3);
     /* clip-path: polygon(50% 0%, 67% 25%, 98% 35%, 76% 59%, 79% 91%, 49% 80%, 21% 91%, 26% 59%, 2% 35%, 34% 25%); */
     clip-path: polygon(51% 0, 68% 25%, 100% 38%, 81% 65%, 85% 100%, 49% 84%, 13% 100%, 19% 62%, 0 37%, 32% 28%);
@@ -166,13 +166,13 @@
 .span-stars{    
 
     color: rgba(0, 0, 0, .3);
-    font-size: .7em;
+    font-size:.8em;
 }
 .span-shared{
     display: inline-flex;
     align-items: center;
     color: rgba(0, 0, 0, .9);
-    font-size: .7em;    
+    font-size: .9em;    
 }
 .span-shared::before{
     display: inline-block;    
