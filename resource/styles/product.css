@@ -195,16 +195,21 @@
     background-color: var(--color-yellow-intense);
 }
 .general-add-cart{       
-    margin: 1rem .9rem;
+    display: flex;    
+}
+.form-addcart{
+    width: 100%;
 }
 .add-cant{
     width: auto;
     display: flex;    
+    margin: 1rem .9rem;
     justify-content: space-between;    
 }
 .button-addcart{
     color: white;    
     margin: initial;
+    width: 10rem;
 }
 .select-addcart{
     -o-appearance: none;
@@ -212,7 +217,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    position: relative;
+    
     display: block;    
     outline: none;
     min-width: 3rem;
