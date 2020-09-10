@@ -198,13 +198,14 @@
     display: flex;    
 }
 .form-addcart{
-    width: 100%;
+width: 100%;
 }
 .add-cant{
     width: auto;
     display: flex;    
     margin: 1rem .9rem;
-    justify-content: space-between;    
+    gap: .4rem;
+    justify-content: center;
 }
 .button-addcart{
     color: white;    
