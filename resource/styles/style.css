@@ -19,6 +19,16 @@
     src: url(../fonts/VarelaRound-Regular.ttf);
     font-display: block;
 }
+.hr{
+    width: auto;    
+    border-top:.02rem solid rgba(0, 0, 0, .2);    
+}
+.hl{
+    width: 0.1rem;
+    height: auto;
+    position: relative;    
+    background-color: rgba(0, 0, 0, .3);
+}
 body{
     margin: 0;
     padding: 0;
