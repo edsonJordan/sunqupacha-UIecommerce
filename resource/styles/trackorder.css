@@ -176,33 +176,38 @@
     margin: auto;    
     width:  calc(var(--widht--bar) * 1.06);    
 }
-.block.check:nth-of-type(n)::after{    
+.block.check:nth-of-type(n)::after{        
     top: calc(var(--height-block) * 1);      
     background-color: white;    
 }
-.block:nth-last-child(n)::after{
-    background-color: transparent;
-}
-/* .block.check:nth-of-type(2)::after{
-    background-color: transparent;
-} */
 .block:nth-of-type(2)::after{
     background-color: transparent;
 }
 .block.check.active{
-    z-index: 2;
-    background-color: white;
+    z-index: 2; 
     border: var(--bor-block) solid var(--color-yellow-intense);
 }
-.block.check.active::before{    
+.block.check.active::before{        
     transform: scale(.5);
 }
-.block.check.active::after{
-    z-index: 1;
-    top: 1.75rem;
-    height: 8rem;
+.block.check.active  ~ .block{
+    z-index: 2;
     background-color: white;    
 }
+.block.check.active ~ .block::after{
+    z-index: -1;
+    background-color: white;
+    top: calc(var(--height-block)  * -.9)  ;
+}
+.block.check.active + .block::after{    
+    background-color: white;
+    top: calc(var(--height-block)  * -.788)  ;
+}
+.block.block.check.active::after{    
+    background-color: transparent;
+}
+
+
 .line-blocks{
     position: absolute;    
     z-index: 2;
