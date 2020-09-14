@@ -125,7 +125,7 @@
     /* Number blocks */
     --blocks--loading: 7;
     /* Enable */
-    --height--bar: calc((var(--blocks--loading) * 3.5rem) + var(--height-block) );
+    --height--bar: calc((var(--blocks--loading) * 4.1rem) + var(--height-block) );
     /* Not enable */
     --widht--bar:.5rem;
 }
@@ -220,11 +220,35 @@
 }
 .data-block{
     position: absolute;    
-    width: auto;    
-    margin-left: -10rem;
+    width: 7rem;    
+    margin-left: -8rem;
+    font-size: .8rem;
+    color:rgba(0, 0, 0, .2);
 }
 .info-block{
     position: absolute;    
-    width: auto;    
+    width: 7rem;    
+    margin-top: -.2rem;
     margin-left: 4rem;
+}
+.block-info{
+    font-size: .7rem;
+    line-height: .6rem;
+    
+}
+.block-info::after{
+    display: block;
+    content: attr(attr-data);
+    color:rgba(0, 0, 0, .3);
+}
+.group-buttons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+.button-order{
+    width: 7rem;
+    background-color: white;
+    border: .123rem solid var(--color-blue-primary);
+    text-align: center;
 }
