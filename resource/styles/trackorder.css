@@ -23,7 +23,7 @@
  background-color: var(--color-back-dark);   
 }
 .menu--icons{
-    width: 10%;
+    width:unset;
 }
 
 /* Header section */
