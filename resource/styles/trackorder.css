@@ -117,13 +117,16 @@
 
 :root{
     /*blocks loading   */
-    --height-block: 1.5rem;
-    --widht-block:1.5rem;
+    /* Enable */
+    --height-block: 2.5rem;
+    --widht-block:2.5rem;
     --bor-block: .123rem;
     /*BAR LOADING  */
     /* Number blocks */
     --blocks--loading: 7;
-    --height--bar: calc((var(--blocks--loading) * 2.5rem) + var(--height-block) );
+    /* Enable */
+    --height--bar: calc((var(--blocks--loading) * 3.5rem) + var(--height-block) );
+    /* Not enable */
     --widht--bar:.5rem;
 }
 
@@ -206,8 +209,6 @@
 .block.block.check.active::after{    
     background-color: transparent;
 }
-
-
 .line-blocks{
     position: absolute;    
     z-index: 2;
@@ -216,4 +217,14 @@
     background-color: var(--color-yellow-intense);    
     margin-top: calc(var(--height-block)/ 2);
     margin-left: calc(var(--widht--bar) * .3) ;
+}
+.data-block{
+    position: absolute;    
+    width: auto;    
+    margin-left: -10rem;
+}
+.info-block{
+    position: absolute;    
+    width: auto;    
+    margin-left: 4rem;
 }
